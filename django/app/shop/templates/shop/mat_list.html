@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Название</th>
+        <th>Стоимость, за шт/м&sup3</th>
+        <th>Описание</th>
+    </tr>
+    {% for mat in mats %}
+    <tr>
+        <td>{{ mat.pk }}</td>
+        <td>{{ mat.title }}</td>
+        <td>{{ mat.cost }}</td>
+        <td>{{ mat.description }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

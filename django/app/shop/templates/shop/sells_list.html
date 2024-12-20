@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<button onclick="window.location.replace('{% url 'shop:charts' %}')">К графикам</button>
+
+<h1>Сгенерированные фикстуры</h1>
+
+{% if sells %}
+    <ul>
+        {% for sell in sells %}
+            <li>
+                <strong>ID:</strong> {{ sell.pk }}<br>
+                <strong>Материал:</strong> {{ sell.mat.title }}<br>
+                <strong>Количество:</strong> {{ sell.count }}<br>
+                <strong>Имя покупателя:</strong> {{ sell.name }}<br>
+                <strong>Фамилия покупателя:</strong> {{ sell.surname }}<br>
+                <strong>Город:</strong> {{ sell.city }}<br>
+                <hr>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Фикстуры не найдены.</p>
+{% endif %}
+{% endblock content %}

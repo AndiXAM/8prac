@@ -1,0 +1,47 @@
+[
+    {
+        "model": "shop.material",
+        "pk": 1,
+        "fields": {
+            "title": "Sand",
+            "description": "The price for one cubic meter of sand is indicated",
+            "cost": 1200
+        }
+    },
+    {
+        "model": "shop.material",
+        "pk": 2,
+        "fields": {
+            "title": "Gravel",
+            "description": "The price for one cubic meter of gravel is indicated",
+            "cost": 1500
+        }
+    },
+    {
+        "model": "shop.material",
+        "pk": 3,
+        "fields": {
+            "title": "Steel",
+            "description": "The price for one kilogram of steel is indicated",
+            "cost": 80
+        }
+    },
+    {
+        "model": "shop.material",
+        "pk": 4,
+        "fields": {
+            "title": "Wood",
+            "description": "The price for one cubic meter of wood is indicated",
+            "cost": 4500
+        }
+    },
+    {
+        "model": "shop.material",
+        "pk": 5,
+        "fields": {
+            "title": "Glass",
+            "description": "The price for one square meter of glass is indicated",
+            "cost": 2000
+        }
+    }
+]
